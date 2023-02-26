@@ -1672,6 +1672,7 @@ ul li {
   transition: 0.3s all;
   -webkit-transform: scale(1);
           transform: scale(1);
+  border: 1px solid transparent;
 }
 .product-detail .slideProduct .swiper-slide img {
   height: 147px;
