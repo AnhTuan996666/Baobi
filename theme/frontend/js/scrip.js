@@ -15,6 +15,27 @@ var SLIDESHOW = (function () {
         
     };
 
+    var slideProductDetail = function () {
+        var swiper = new Swiper(".slideProduct", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+          });
+          var swiper2 = new Swiper(".slideProduct2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+    }
+
     var slideAre = function (className,btnNext,btnPrev) {
 
         var swiper = new Swiper(className, {
@@ -57,6 +78,7 @@ var SLIDESHOW = (function () {
             slideBanner();
             slideCompany();
             silideInspiration();
+            slideProductDetail();
         },
     };
 })();
@@ -118,18 +140,13 @@ var WEBS = (function () {
 var OPTIONS = (function () {
 
     var checkPassword = function () {
-        let input = $("#pass");
-            $('.view-password').on('click', function () {
-                if($(this).find(".fa").hasClass('fa-eye')) {
-                        $(this).find(".fa").addClass('fa-eye-slash');
-                        $(this).find(".fa").removeClass('fa-eye');
-                        input.attr('type',"text");
-                } else {
-                        $(this).find(".fa").addClass('fa-eye');
-                        $(this).find(".fa").removeClass('fa-eye-slash');
-                        input.attr('type',"password");
-                }
-            }); 
+        $('.fancybox').fancybox({
+            padding : 0, // default 15
+            margin: 0,   // default 20
+            width: 560,  // default 800
+            height: 340, // default 600
+            opacity: true, // default false
+        });
         }
     return {
         _: function () {

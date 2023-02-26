@@ -616,33 +616,6 @@ ul li {
     }
 }
 
-.breadcrumb{
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    li{
-        position: relative;
-        font-size: 11px;
-        padding-right: 20px;
-        a{
-            color: #616060;
-        }
-        span{
-            color: #33345B;
-        }
-        &::after{
-            content: "\f105";
-            position: absolute;
-            right: 8px;
-            font-family: 'fontawesome';
-            color: #33345B;
-        }
-        &:last-child::after{
-            content: unset;
-        }
-    }
-}
-
 .hv_img {
     display: block;
     position: relative;
@@ -978,9 +951,44 @@ ul li {
         }
         &-slug {
             padding: 4px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        }
+    &-detail {
+        padding: 40px 0;
+     .slideProduct2 {
+        max-height: 500px;
+     }
+     .slideProduct {
+            .swiper-slide {
+                padding: 2px;
+                cursor: pointer;
+                overflow: hidden;
+                transition: .3s all;
+                transform: scale(1);
+                img {
+                    height: 147px;
+                }
+                &:hover {
+                    border: 1px solid rgba(0,0,0,.3);
+                    opacity: 1;
+                    transition: .3s all;
+                    transform: scale(1.1);
+                }
+                &-visible {
+                    opacity: 0.7;
+                }
+                &-thumb-active {
+                    border: 1px solid rgba(0,0,0,.3);
+                    opacity: 1;
+                }
+            } 
         }
     }
 }
+
 .page {
     &_title {
         font-size: 20px;

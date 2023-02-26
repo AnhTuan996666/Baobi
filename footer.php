@@ -102,6 +102,6 @@
 <script  src="theme/frontend/js/swiper.min.js" type="text/javascript" defer></script>
 <script src="theme/frontend/js/scrip.js" defer></script>
 <script src="theme/frontend/js/wow.min.js" defer></script>
-<script></script>
+<script src="theme/frontend/fancybox/fancybox.min.js"></script>
 </body>
 </html>

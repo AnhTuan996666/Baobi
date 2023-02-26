@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="theme/frontend/scss/style.css">
     <link rel="stylesheet" href="theme/frontend/css/menu.css">
     <link rel="stylesheet" href="theme/frontend/scss/mobie.css">
+    <link rel="stylesheet" href="theme/frontend/fancybox/fancybox.min.css">
 </head>
 
 <body>
@@ -19,15 +20,6 @@
         <div class="header-top">
             <div class="container container-sm-fluid">
                 <div class="row align-content-center justify-content-between">
-                    <div class="col-lg-12 header-top-item d-none d-lg-flex justify-content-end align-items-center">
-                        <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
-                            <li><a href="/tin-tuc/" class="nav-top-link">Blog</a></li>
-                            <li><a href="/lien-he/" class="nav-top-link">Liên hệ</a></li>
-                            <li><a href="/tai-khoan/" class="nav-top-link">Login</a></li>
-                            <li><a href="/tai-khoan/" class="nav-top-link">My Account</a></li>
-                        </ul>
-                    </div>
-
                     <div class="mobie-icon-menu col-12 col-lg-6 d-flex d-lg-none align-items-center justify-content-end">
                         <div class="mobie-logo d-block d-lg-none w-100">
                             <div class="d-flex w-100 align-items-center">
