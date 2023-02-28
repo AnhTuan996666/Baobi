@@ -27,9 +27,14 @@
                                 <a href="#" title="" class="img_ d-block logo-1">
                                     <img width="230" height="81" src="theme/frontend/images/logo.png" alt="In Bao Bì Đức Phát">
                                 </a>
-                                <div class="btn-card">
-                                <span class="cart__current">0</span>
-                                <button class="btn-header"><img src="theme/frontend/images/card.png" alt=""></button>
+                                <div class="header-end d-flex align-items-center justify-content-end">
+                                    <div class="btn-card">
+                                        <span class="cart__current">0</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="box">
+                                        <p>Chưa có sản phẩm trong giỏ hàng.</p>
+                                    </div>
                             </div>
                         </div>
                         </div>
@@ -115,6 +120,9 @@
                             <div class="btn-card">
                                 <span class="cart__current">0</span>
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                            <div class="box">
+                                <p>Chưa có sản phẩm trong giỏ hàng.</p>
                             </div>
                         </div>
                     </div>

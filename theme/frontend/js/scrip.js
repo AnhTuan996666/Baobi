@@ -69,8 +69,35 @@ var SLIDESHOW = (function () {
     var silideInspiration = function () {
         slideAre(".companySlide", ".company-next", ".company-prev");
     }
+
     var slideCompany = function () {
-        slideAre(".inspirationSlide", ".inspiration-next", ".inspiration-prev")
+        slideAre(".inspirationSlide", ".inspiration-next", ".inspiration-prev");
+    }
+
+    var productSimilarSlide = function () {
+        var swiper = new Swiper(".productSimilarSlide", {
+            slidesPerView: 1.5,
+            grid: {
+              rows: 1,
+            },
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".product-similar-next",
+                prevEl: ".product-similar-prev",
+              },
+              breakpoints: {
+                640: {
+                  slidesPerView: 3,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              },
+          });
+
     }
 
     return {
@@ -79,6 +106,7 @@ var SLIDESHOW = (function () {
             slideCompany();
             silideInspiration();
             slideProductDetail();
+            productSimilarSlide();
         },
     };
 })();
@@ -91,10 +119,10 @@ var WEBS = (function () {
 
                 if (height > header) {
                     $(".header-top").hide();
-                    $(".header").addClass("fixed");
+                    $(".header").addClass("fixed smooth");
                 } else {
                     $(".header-top").show();
-                    $(".header").removeClass("fixed");
+                    $(".header").removeClass("fixed smooth");
                 }
             });
         }
@@ -103,7 +131,7 @@ var WEBS = (function () {
     var backTop = function () {
         var backTop = $(".back-to-top");
         $(window).scroll(function (event) {
-            if ($(this).scrollTop() > 1200) {
+            if ($(this).scrollTop() > 1000) {
                 backTop.show(200);
             } else {
                 backTop.hide(200);
@@ -133,24 +161,6 @@ var WEBS = (function () {
             backTop();
             initAnimation();
             showFooter();
-        },
-    };
-})();
-
-var OPTIONS = (function () {
-
-    var checkPassword = function () {
-        $('.fancybox').fancybox({
-            padding : 0, // default 15
-            margin: 0,   // default 20
-            width: 560,  // default 800
-            height: 340, // default 600
-            opacity: true, // default false
-        });
-        }
-    return {
-        _: function () {
-            checkPassword();
         },
     };
 })();
@@ -244,6 +254,12 @@ var MENU = (function () {
 $(document).ready(function () {
     MENU._();
     SLIDESHOW._();
-    OPTIONS._();
     WEBS._();
+    $('.fancybox').fancybox({
+        padding : 0, // default 15
+        margin: 0,   // default 20
+        width: 560,  // default 800
+        height: 340, // default 600
+        opacity: true, // default false
+    });
 });
