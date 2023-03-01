@@ -1,4 +1,4 @@
-<div class="order" style="background: url(theme/frontend/images/banner-v3.jpg) no-repeat 100%;">
+<div class="order" style="background: url(theme/frontend/images/banner-v3.jpg) no-repeat;">
     <div class="container">
         <div class="box">
             <div class="ttl">Tiện ích bổ sung đơn hàng lớn</div>

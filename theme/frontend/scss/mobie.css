@@ -145,10 +145,12 @@
     left: 0;
     width: 100%;
     z-index: 20;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .header-top {
     display: block !important;
-    padding: 10px;
+    padding: 10px 0;
     background: #fff;
     height: auto;
   }
@@ -174,7 +176,7 @@
   .menu ul {
     margin-bottom: 0;
     border-bottom: 1px solid #fff;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 100%;
   }
   .menu ul li {
@@ -208,12 +210,24 @@
     padding: 5px 20px;
   }
   .mobie-logo img {
-    max-height: 46px;
+    max-height: 36px;
+  }
+  .btn-menu {
+    border: 1px solid #212529;
+    background-color: #fff;
+    padding: 2px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 4px;
+    margin-right: 2px;
   }
   .show_menu {
-    color: #000;
-    font-size: 30px;
-    margin-left: 20px;
+    color: #212529;
+    font-size: 26px;
   }
   .show_menu:hover {
     -webkit-transition: 0.3s;

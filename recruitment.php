@@ -21,9 +21,7 @@
                                     <p class="month">Th8</p>
                                 </div>
                             </a>
-                             
                         </div>
-                       
                     </div>
                     <?php endfor;?>
                 </div>

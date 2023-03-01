@@ -78,25 +78,25 @@ var SLIDESHOW = (function () {
         var swiper = new Swiper(".productSimilarSlide", {
             slidesPerView: 1.5,
             grid: {
-              rows: 1,
+                rows: 1,
             },
             spaceBetween: 20,
             navigation: {
                 nextEl: ".product-similar-next",
                 prevEl: ".product-similar-prev",
-              },
-              breakpoints: {
+            },
+            breakpoints: {
                 640: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
                 768: {
-                  slidesPerView: 3,
+                    slidesPerView: 3,
                 },
                 1024: {
-                  slidesPerView: 4,
+                    slidesPerView: 4,
                 },
-              },
-          });
+            },
+        });
 
     }
 
@@ -155,6 +155,7 @@ var WEBS = (function () {
         var wow = new WOW();
         wow.init();
     };
+
     return {
         _: function () {
             scrollHeader();
@@ -166,7 +167,6 @@ var WEBS = (function () {
 })();
 
 var MENU = (function () {
-   
         var headerBody = $("#header-body");
         var addbgMenu = function () {
         if ($(document).width() <= 991) {
@@ -177,6 +177,14 @@ var MENU = (function () {
                 );
         };
     };
+    
+    var showCard = function() {
+        var Card = $(".show-card");
+        $(".show-card").find(".box").hide();
+        if ($(document).width() <= 991) {
+            Card.append(  '<div class="bg__menu"><i class="fa fa-times close_menu"></i></div>');
+        }
+    }
 
     var menu = function() {
         if ($(document).width() <= 991) {
@@ -248,6 +256,7 @@ var MENU = (function () {
             menu();
             openMenuMobile();
             closeMenuMobile();
+            showCard();
         },
     };
 })();

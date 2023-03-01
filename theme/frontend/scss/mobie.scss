@@ -142,9 +142,10 @@
         left: 0;
         width: 100%;
         z-index: 20;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 10%);
         &-top {
             display: block !important;
-            padding: 10px;
+            padding: 10px 0;
             background: #fff;
             height: auto;
         }
@@ -170,7 +171,7 @@
         ul {
             margin-bottom: 0;
             border-bottom: 1px solid #fff;
-            padding: 0 20px;
+            padding: 0 10px;
             width: 100%;
             li {
                 list-style: none;
@@ -205,14 +206,21 @@
 
     .mobie-logo {
         img {
-            max-height: 46px;
+            max-height: 36px;
         }
     }
-
+    .btn-menu {
+        border: 1px solid #212529;
+        background-color: #fff;
+        padding: 2px 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        margin-right: 2px;
+    }
     .show_menu {
-        color: #000;
-        font-size: 30px;
-        margin-left: 20px;
+        color: #212529;
+        font-size: 26px;
         &:hover {
             transition: 0.3s;
             color: #fff;

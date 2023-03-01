@@ -23,11 +23,11 @@
                     <div class="mobie-icon-menu col-12 col-lg-6 d-flex d-lg-none align-items-center justify-content-end">
                         <div class="mobie-logo d-block d-lg-none w-100">
                             <div class="d-flex w-100 align-items-center">
-                                <button>  <i class="fa fa-align-right show_menu" aria-hidden="true"></i></button>
+                                <button class="btn-menu"><i class="fa fa-bars show_menu" aria-hidden="true"></i></button>
                                 <a href="#" title="" class="img_ d-block logo-1">
                                     <img width="230" height="81" src="theme/frontend/images/logo.png" alt="In Bao Bì Đức Phát">
                                 </a>
-                                <div class="header-end d-flex align-items-center justify-content-end">
+                                <div class="header-end d-flex align-items-center justify-content-end show-card">
                                     <div class="btn-card">
                                         <span class="cart__current">0</span>
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -116,7 +116,7 @@
                                 <a href="#" title="">LIÊN HỆ</a>
                             </li>
                         </ul>
-                        <div class="header-end d-flex align-items-center justify-content-end">
+                        <div class="header-end d-flex align-items-center justify-content-end d-none d-lg-block">
                             <div class="btn-card">
                                 <span class="cart__current">0</span>
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
