@@ -69,7 +69,7 @@
                     display: block;
                     padding: 0.5em 0.5em;
                     &:hover {
-                        color: #244691;
+                        color: #fa4616;
                         transition: 0.3s;
                     }
                 }
@@ -79,7 +79,7 @@
                 &:hover {
                     transition: 0.3s;
                     &> a {
-                        color: #244691;
+                        color: #fa4616;
                         transition: 0.3s;
                     }
                     &> ul {
@@ -169,7 +169,7 @@
                     right: 0;
                     min-width: 35px;
                     font-size: 19px;
-                    background-color: #244691;
+                    background-color: #fa4616;
                     z-index: 1;
                     color: #fff;
                     text-align: center;
@@ -192,7 +192,7 @@
                 border-bottom: 1px solid #6160607a;
                 &:hover {
                     & > a {
-                        color: #244691;
+                        color: #fa4616;
                         transition: 0.3s;
                     }
                 }
@@ -209,7 +209,7 @@
             color: #fff;
             font-size: 25px;
             padding: 7px;
-            color: #244691;
+            color: #fa4616;
             transition: 0.3s;
             &:hover {
                 color: #ff0000;

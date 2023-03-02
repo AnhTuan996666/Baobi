@@ -39,22 +39,22 @@ var SLIDESHOW = (function () {
     var slideAre = function (className,btnNext,btnPrev) {
 
         var swiper = new Swiper(className, {
-            slidesPerView: 3,
+            slidesPerView: 1.5,
             grid: {
               rows: 1,
             },
-            spaceBetween: 0,
+            spaceBetween: 20,
             navigation: {
                 nextEl: btnNext,
                 prevEl: btnPrev,
               },
               breakpoints: {
-                640: {
-                  slidesPerView: 2,
+                414: {
+                  slidesPerView: 2.5,
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 4,
+                  slidesPerView: 3.5,
                   spaceBetween: 20,
                 },
                 1024: {
@@ -144,7 +144,11 @@ var WEBS = (function () {
 
     var showFooter = function () {
         var showFooter = $(".title-footer");
+        
         if ($(document).width() <= 991) {
+            $(".items") .each(function() {
+                
+            })
             showFooter.click(function (event) {
                 $(".item-menu").slideToggle(300);
             });
@@ -173,19 +177,46 @@ var MENU = (function () {
             headerBody
                 .find(".container")
                 .append(
-                    '<div class="bg__menu"><i class="fa fa-times close_menu"></i></div>'
+                    '<div class="bg__menu"><i class="fa fa-times close_menu"/></div>'
                 );
         };
     };
     
     var showCard = function() {
-        var Card = $(".show-card");
         $(".show-card").find(".box").hide();
         if ($(document).width() <= 991) {
-            Card.append(  '<div class="bg__menu"><i class="fa fa-times close_menu"></i></div>');
+            $(".page-product").find(".js-product").append(
+                '<div class="bg_menu"><i class="fa fa-times close_menu"/></div>'
+            );
+            $(".show-card").each(function() {
+                $(".btn-card").click(function() {
+                    $(this).parent().find(".box").slideToggle();
+                })
+            })
         }
     }
 
+    var productFilter = function () {
+        if ($(document).width() <= 991) {
+            $(".page-product").addClass("position-relative");
+                $(".btn-filter").click(function() {
+                    $(".product-left").toggleClass("active");
+                    $(".product-left").toggleClass("smooth");
+                    $('.bg_menu').toggleClass('active');
+                    $('.bg_menu').addClass('smooth');
+                    $('body').addClass('overflow-hidden');
+                })
+        }
+    }
+    var closeproductFilter = function() {
+        if ($('.product-left').length > 0) {
+            $('.bg_menu').click(function() {
+                $('body').removeClass('overflow-hidden');
+                $('.product-left').removeClass('active');
+                $('.bg_menu').removeClass('active');
+            });
+        }
+    }
     var menu = function() {
         if ($(document).width() <= 991) {
             $('.menu').find("ul>li>ul").hide();
@@ -249,6 +280,37 @@ var MENU = (function () {
         }
     }
 
+    var menuProduct = function() {
+            $('.product-left-list').find("ul>li>ul").hide();
+            $('.product-left-list').find("ul li").each(function() {
+                if ($(this).find("ul>li").length > 0) {
+                    $(this).prepend('<i class=" fa fa-angle-right smooth"></i>');
+                    $(this).addClass('active');
+                }
+            });
+        $('.product-left-list').find('li i').click(function(event) {
+
+            var ul = $(this).nextAll("ul");
+
+            if (ul.is(":hidden") === true) {
+
+                ul.slideDown(200);
+            } else {
+                ul.slideUp(200);
+            }
+
+            if ($(this).hasClass('fa-angle-right')) {
+                $(this).addClass('fa-angle-down rote');
+                $(this).removeClass('fa-angle-right');
+                return;
+            } else {
+                $(this).addClass('fa-angle-right');
+                $(this).removeClass('fa-angle-down rote');
+                return;
+            }
+        });
+
+    }
 
     return {
         _: function () {
@@ -257,6 +319,9 @@ var MENU = (function () {
             openMenuMobile();
             closeMenuMobile();
             showCard();
+            menuProduct();
+            productFilter();
+            closeproductFilter();
         },
     };
 })();

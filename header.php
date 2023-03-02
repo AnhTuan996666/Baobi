@@ -22,7 +22,7 @@
                 <div class="row align-content-center justify-content-between">
                     <div class="mobie-icon-menu col-12 col-lg-6 d-flex d-lg-none align-items-center justify-content-end">
                         <div class="mobie-logo d-block d-lg-none w-100">
-                            <div class="d-flex w-100 align-items-center">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
                                 <button class="btn-menu"><i class="fa fa-bars show_menu" aria-hidden="true"></i></button>
                                 <a href="#" title="" class="img_ d-block logo-1">
                                     <img width="230" height="81" src="theme/frontend/images/logo.png" alt="In Bao Bì Đức Phát">
@@ -84,10 +84,10 @@
                     <div class="menu">
                         <ul>
                             <li>
-                                <a href="#" title="">TRANG CHỦ</a>
+                                <a href="#" title="">Danh mục sản phẩm</a>
                             </li>
                             <li>
-                                <a href="#" title="">GIỚI THIỆU</a>
+                                <a href="#" title="">Về chúng tôi</a>
                                 <ul>
                                     <li>
                                         <a href="#" title="">SẢN PHẨM & DỊCH VỤ</a>
@@ -101,16 +101,10 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" title="">SẢN PHẨM & DỊCH VỤ</a>
+                                <a href="#" title="">Năng lực sản xuất</a>
                             </li>
                             <li>
-                                <a href="#" title="">ĐỐI TÁC</a>
-                            </li>
-                            <li>
-                                <a href="#" title="">HỒ SƠ CÔNG TY</a>
-                            </li>
-                            <li>
-                                <a href="#" title="">TUYỂN DỤNG</a>
+                                <a href="#" title="">Hệ thống phân phối</a>
                             </li>
                             <li>
                                 <a href="#" title="">LIÊN HỆ</a>

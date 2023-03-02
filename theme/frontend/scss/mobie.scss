@@ -99,6 +99,9 @@
             left: 5%;
             .title-baner {
                 font-size: 30px;
+                @media (max-width: 575px) {
+                    font-size: 22px;
+                }
                 &--custom {
                     font-size: 50px;
                 }
