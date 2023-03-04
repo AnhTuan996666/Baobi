@@ -1137,6 +1137,8 @@ ul li {
 }
 .footer-logo img {
   width: 100%;
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
 }
 .footer-form .form-control {
   background: #2d4256;
