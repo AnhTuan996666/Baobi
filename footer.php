@@ -31,7 +31,7 @@
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
                   <span class="title-footer">THÔNG TIN<i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
-                  <ul class="item-menu">
+                  <ul class="item-menu item-menu-1">
                      <?php for($i = 0 ; $i <= 6; $i++) : ?>
                      <li class=""><a href="#">Về Chúng Tôi <?= $i ?></a></li>
                      <?php endfor ?>
@@ -41,7 +41,7 @@
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
                   <span class="title-footer">SẢN PHẨM <i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
-                  <ul class="item-menu">
+                  <ul class="item-menu item-menu-2">
                   <?php for($i = 0 ; $i <= 6; $i++) : ?>
                      <li class=""><a href="#">Thông Tin Mua Hàng <?= $i ?></a></li>
                   <?php endfor ?>
@@ -51,7 +51,7 @@
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
                   <span class="title-footer">CONTACT US<i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
-                  <div class="item-menu">
+                  <div class="item-menu item-menu-3">
                      <p class="item-menu__txt"><i class="fa fa-headphones me-2" aria-hidden="true"></i><a href="tel:0981.84.69.89"> 0981.84.69.89 </a></li>
                      <p class="item-menu__txt"><i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i> Địa chỉ: 142 Phú Viên, Phường Bồ Đề, Quận Long Biên, Hà Nội.</li>
                      <p class="item-menu__txt"><i class="fa fa-clone me-2" aria-hidden="true"></i><a href="#">Liên hệ</a></li>

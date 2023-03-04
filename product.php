@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3 js-product">
-      <button class="d-block btn-filter d-lg-none">LỌC</button>
+      <button class="d-block btn-filter d-lg-none"><i class="fa fa-sliders" aria-hidden="true"></i>LỌC</button>
         <div class="product-left">
           <div class="product-left-list">
             <ul>

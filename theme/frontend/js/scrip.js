@@ -147,11 +147,10 @@ var WEBS = (function () {
         
         if ($(document).width() <= 991) {
             $(".items") .each(function() {
-                
+                showFooter.click(function (e) {
+                    nameClass.slideToggle(300);
+                });
             })
-            showFooter.click(function (event) {
-                $(".item-menu").slideToggle(300);
-            });
         }
     };
 
@@ -166,6 +165,7 @@ var WEBS = (function () {
             backTop();
             initAnimation();
             showFooter();
+            loadMore();
         },
     };
 })();
