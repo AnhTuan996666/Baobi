@@ -228,24 +228,16 @@ var MENU = (function () {
             });
         }
         $('.menu').find('li i').click(function(event) {
+            // Reset ul , i
+            $('.menu ul li ul').slideUp(200);
 
-            var ul = $(this).nextAll("ul");
-
-            if (ul.is(":hidden") === true) {
-
-                ul.slideDown(200);
+            if ($(this).hasClass('children')) {
+                $(this).nextAll('ul').slideUp(200)
+                $(this).removeClass('children');
             } else {
-                ul.slideUp(200);
-            }
-
-            if ($(this).hasClass('fa-angle-right')) {
-                $(this).addClass('fa-angle-down rote');
-                $(this).removeClass('fa-angle-right');
-                return;
-            } else {
-                $(this).addClass('fa-angle-right');
-                $(this).removeClass('fa-angle-down rote');
-                return;
+                $('.menu ul li i').removeClass('children');
+                $(this).addClass('children');
+                $(this).nextAll('ul').slideDown(200)
             }
         });
 
@@ -290,23 +282,15 @@ var MENU = (function () {
             });
         $('.product-left-list').find('li i').click(function(event) {
 
-            var ul = $(this).nextAll("ul");
+            $('.product-left-list li ul').slideUp(200);
 
-            if (ul.is(":hidden") === true) {
-
-                ul.slideDown(200);
+            if ($(this).hasClass('children')) {
+                $(this).nextAll('ul').slideUp(200)
+                $(this).removeClass('children');
             } else {
-                ul.slideUp(200);
-            }
-
-            if ($(this).hasClass('fa-angle-right')) {
-                $(this).addClass('fa-angle-down rote');
-                $(this).removeClass('fa-angle-right');
-                return;
-            } else {
-                $(this).addClass('fa-angle-right');
-                $(this).removeClass('fa-angle-down rote');
-                return;
+                $('.menu ul li i').removeClass('children');
+                $(this).addClass('children');
+                $(this).nextAll('ul').slideDown(200)
             }
         });
 

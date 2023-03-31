@@ -2857,3 +2857,7 @@ ul li {
     padding-right: 40px;
   }
 }
+
+.fa-angle-right.children::before {
+content: "\f107" ;
+}

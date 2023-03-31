@@ -102,6 +102,17 @@
                             </li>
                             <li>
                                 <a href="#" title="">Năng lực sản xuất</a>
+                                 <ul>
+                                    <li>
+                                        <a href="#" title="">SẢN PHẨM & DỊCH VỤ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">ĐỐI TÁC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">HỒ SƠ CÔNG TY</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#" title="">Hệ thống phân phối</a>
