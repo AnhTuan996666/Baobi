@@ -1,18 +1,17 @@
 var SLIDESHOW = (function () {
     var slideBanner = function () {
-            var swiper = new Swiper(".slideBaner", {
-                navigation: {
-                  nextEl: ".banner-next",
-                  prevEl: ".banner-prev",
-                },
-                speed: 1000,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-              });
-        
+        var swiper = new Swiper(".slideBaner", {
+            navigation: {
+                nextEl: ".banner-next",
+                prevEl: ".banner-prev",
+            },
+            speed: 1000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+        });
     };
 
     var slideProductDetail = function () {
@@ -22,18 +21,18 @@ var SLIDESHOW = (function () {
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
-          });
-          var swiper2 = new Swiper(".slideProduct2", {
+        });
+        var swiper2 = new Swiper(".slideProduct2", {
             loop: true,
             spaceBetween: 10,
             navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             thumbs: {
-              swiper: swiper,
+            swiper: swiper,
             },
-          });
+        });
     }
 
     var slideAre = function (className,btnNext,btnPrev) {
@@ -41,28 +40,28 @@ var SLIDESHOW = (function () {
         var swiper = new Swiper(className, {
             slidesPerView: 1.5,
             grid: {
-              rows: 1,
+                rows: 1,
             },
             spaceBetween: 20,
             navigation: {
                 nextEl: btnNext,
                 prevEl: btnPrev,
-              },
-              breakpoints: {
+                },
+                breakpoints: {
                 414: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 20,
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 3.5,
-                  spaceBetween: 20,
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
                 },
                 1024: {
-                  slidesPerView: 6,
-                  spaceBetween: 0,
+                    slidesPerView: 6,
+                    spaceBetween: 0,
                 },
-              },
-          });
+                },
+            });
 
     }
     
@@ -97,7 +96,6 @@ var SLIDESHOW = (function () {
                 },
             },
         });
-
     }
 
     return {
@@ -115,8 +113,8 @@ var WEBS = (function () {
         if ($(".header").length > 0) {
             $(window).scroll(function () {
                 var header = $(".header").height();
-                var height = $(this).scrollTop();
 
+                var height = $(this).scrollTop();
                 if (height > header) {
                     $(".header-top").hide();
                     $(".header").addClass("fixed smooth");
@@ -144,13 +142,11 @@ var WEBS = (function () {
 
     var showFooter = function () {
         var showFooter = $(".title-footer");
-        
         if ($(document).width() <= 991) {
-            $(".items") .each(function() {
-                showFooter.click(function (e) {
-                    nameClass.slideToggle(300);
-                });
-            })
+            showFooter.click(function (e) {
+                e.preventDefault();
+                $(".item-menu").slideToggle(300);
+            });
         }
     };
 
@@ -223,7 +219,6 @@ var MENU = (function () {
             $('.menu').find("ul li").each(function() {
                 if ($(this).find("ul>li").length > 0) {
                     $(this).prepend('<i class=" fa fa-angle-right smooth"></i>');
-                    $(this).addClass('active');
                 }
             });
         }
@@ -288,7 +283,7 @@ var MENU = (function () {
                 $(this).nextAll('ul').slideUp(200)
                 $(this).removeClass('children');
             } else {
-                $('.menu ul li i').removeClass('children');
+                $('.product-left-list ul li i').removeClass('children');
                 $(this).addClass('children');
                 $(this).nextAll('ul').slideDown(200)
             }
